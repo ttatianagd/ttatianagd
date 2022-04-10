@@ -76,7 +76,6 @@ function imgChange(box) {
     ColumnFlag3 = "Statele Unite ale Americii";
   }
 }
-
 var firstCol = document.getElementById("box1");
 var secondCol = document.getElementById("box2");
 var thirdCol = document.getElementById("box3");
