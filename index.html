@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles3.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Montserrat:wght@400;500;700&family=Raleway:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <title>The Flags</title>
+  </head>
+  <body>
+    <div id="header">
+      <div id="flag">Flag</div>
+    </div>
+    <div id="container">
+      <div class="box">
+        <form name="col1" id="box1">
+          <img
+            src="https://img5.goodfon.ru/original/1600x900/2/af/romania-romanian-flag-flag-of-romania-flag-romania-large-fla.jpg"
+            class="img"
+            id="col1"
+          />
+          <p>
+            <input
+              type="radio"
+              id="romania"
+              name="column"
+              value="0"
+              onclick="imgChange(this.value)"
+            />Romania
+          </p>
+          <p>
+            <input
+              type="radio"
+              id="bulgaria"
+              name="column"
+              value="1"
+              onclick="imgChange(this.value)"
+            />Bulgaria
+          </p>
+          <p>
+            <input
+              type="radio"
+              id="grecia"
+              name="column"
+              value="2"
+              onclick="imgChange(this.value);"
+            />Grecia
+          </p>
+          <p>
+            <input
+              type="radio"
+              id="franta"
+              name="column"
+              value="3"
+              onclick="imgChange(this.value);"
+            />Franta
+          </p>
+          <p>
+            <input
+              type="radio"
+              id="moldova"
+              name="column"
+              value="4"
+              onclick="imgChange(this.value);"
+            />Moldova
+          </p>
+        </form>
+      </div>
+      <div class="box">
+        <form name="col2" id="box2">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/640px-Flag_of_the_People%27s_Republic_of_China.svg.png"
+            class="img"
+            id="col2"
+          />
+          <p>
+            <input
+              type="radio"
+              id="china"
+              name="column2"
+              value="5"
+              onclick="imgChange(this.value);flagName(this.id)"
+            />China
+          </p>
+          <p>
+            <input
+              type="radio"
+              id="germania"
+              name="column2"
+              value="6"
+              onclick="imgChange(this.value);flagName(this.id)"
+            />Germania
+          </p>
+          <p>
+            <input
+              type="radio"
+              id="rusia"
+              name="column2"
+              value="7"
+              onclick="imgChange(this.value);flagName(this.id)"
+            />Rusia
+          </p>
+          <p>
+            <input
+              type="radio"
+              id="australia"
+              name="column2"
+              value="8"
+              onclick="imgChange(this.value);flagName(this.id)"
+            />Australia
+          </p>
+          <p>
+            <input
+              type="radio"
+              id="brazilia"
+              name="column2"
+              value="9"
+              onclick="imgChange(this.value);flagName(this.id)"
+            />Brazilia
+          </p>
+        </form>
+      </div>
+      <div class="box">
+        <form name="col3" id="box3">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/2560px-Flag_of_India.svg.png"
+            class="img"
+            id="col3"
+          />
+          <p>
+            <input
+              type="radio"
+              id="india"
+              name="column3"
+              value="10"
+              onclick="imgChange(this.value);flagName(this.id)"
+            />India
+          </p>
+          <p>
+            <input
+              type="radio"
+              id="spania"
+              name="column3"
+              value="11"
+              onclick="imgChange(this.value);flagName(this.id)"
+            />Spania
+          </p>
+          <p>
+            <input
+              type="radio"
+              id="suedia"
+              name="column3"
+              value="12"
+              onclick="imgChange(this.value);flagName(this.id)"
+            />Suedia
+          </p>
+          <p>
+            <input
+              type="radio"
+              id="canada"
+              name="column3"
+              value="13"
+              onclick="imgChange(this.value);flagName(this.id)"
+            />Canada
+          </p>
+          <p>
+            <input
+              type="radio"
+              id="sua"
+              name="column3"
+              value="14"
+              onclick="imgChange(this.value);flagName(this.id)"
+            />Statele Unite ale Americii
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="buttons">
+      <input
+        type="button"
+        id="btn"
+        onclick="resetColors(); clearFunc()"
+        value="Clear"
+      />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
