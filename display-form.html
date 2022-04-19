@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CV-Godorogea Tatiana</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <link rel="stylesheet" href="styles4.css"/>
+    </head>
+    <body>
+      <div class="container">
+        <h1>Your details:</h1>
+        <p id="fname"><b>First name:  </b></p>
+        <p id="lname"><b>Last name:  </b></p>
+        <p id="email"><b>Email:  </b></p>
+        <p id="number"><b>Phone number:  </b></p>
+        <p id="adress"><b>Adress:  </b></p>
+        <p id="profession"><b>Profession:  </b></p>
+
+        <h1>Social links:</h1>
+        <p id="social_links"></p>
+
+        <h1>Your Education:</h1>
+        <p id="edutitle"><b>Title:   </b></p>
+        <p id="date"><b>Graduation date:   </b></p>
+        <p id="edutype"><b>Type:  </b></p>
+
+        <h1>Your Jobs:</h1>
+        <p id="job_name"><b>Job name:  </b></p>
+        <p id="start_date"><b>Start date:   </b></p>
+        <p id="end_date"><b>End date:   </b></p>
+        <p id="city_job"><b>City:   </b></p>
+        <p id="company_name"><b>Company name:   </b></p>
+        
+        <button type="button" id="collect-button">Get data</button>
+
+      </div>
+
+      
+       
+<script>
+
+  const fname=$("#fname");
+  const lname=$("#lname");
+  const email=$("#email");
+  const number=$("#number");
+  const adress=$("#adress");
+  const profession=$("#profession");
+  const social_links=$("#social_links");
+  const edutitle=$("#edutitle");
+  const date=$("#date");
+  const edutype=$("#edutype");
+  const job_name=$("#job_name");
+  const start_date=$("#start_date");
+  const end_date=$("#end_date");
+  const city_job=$("#city_job");
+  const company_name=$("#company_name");
+
+  function ajaxGetRequest(){
+    $.ajax({
+      url: 'http://localhost:3000/form-data',
+      method: 'GET',
+      dataType: 'json',
+      success: function(response) {
+        console.log('ture');
+        fname.append(`${JSON.stringify(response.fname)}`);
+        lname.append(`${JSON.stringify(response.lname)}`);
+        email.append(`${JSON.stringify(response.email)}`);
+        number.append(`${JSON.stringify(response.number)}`);
+        adress.append(`${JSON.stringify(response.adress)}`);
+        profession.append(`${JSON.stringify(response.profession)}`);
+        social_links.append(`${JSON.stringify(response.social_links)}`);
+        edutitle.append(`${JSON.stringify(response.edutitle)}`);
+        date.append(`${JSON.stringify(response.date)}`);
+        edutype.append(`${JSON.stringify(response.edutype)}`);
+        job_name.append(`${JSON.stringify(response.job_name)}`);
+        start_date.append(`${JSON.stringify(response.start_date)}`);
+        end_date.append(`${JSON.stringify(response.end_date)}`);
+        city_job.append(`${JSON.stringify(response.city_job)}`);
+        company_name.append(`${JSON.stringify(response.company_name)}`);
+      },
+    });
+  }
+
+  $('#collect-button').on('click', () => {
+    ajaxGetRequest()
+  });
+
+</script>
+    </body>
+</html>
+
+
+

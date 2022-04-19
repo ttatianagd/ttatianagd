@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(#e66465, #9198e5);
+}
+.container {
+    max-width: 1000px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.container .title {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+form .user-details .input-box {
+    margin: 20px 0 12px 0;
+    width: calc(100% / 2 - 20px);
+}
+.user-details .input-box .details{
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: block;
+}
+.user-details .input-box input{
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+#social_btn, #education_btn, #job_btn{
+    font-size: 1.25rem;
+    padding: 10px 20px;
+    border-radius: 80px;
+    background:#9198e5;
+    margin: 30px;
+}
+.container form .education {
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    column-gap: 30%;
+}
+.container .education .education-form {
+    display: flex;
+}
+.container .education .education-form input {
+    padding: 1px 50px;
+}
+.container .education .education-form{
+    display: block;
+}
+
+.container .education .education-form .edu-date input{
+    padding: 5px 50px;
+}
+#education-type {
+    display: block;  
+    margin-top: 30px;
+    padding: 10px 15px;
+}
+.container .job {
+    margin-top: 40px;
+}
+.container .job label input{
+    padding: 5px 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.container .form input{
+    padding: 5px 50px;
+}
+.container .job #present {
+    margin-left: 30px;
+}
+.container .job-details input{
+    column-gap: 40%;
+    margin-right: 40px;
+    padding: 5px 50px;
+}
+.container .save-button input{
+    margin-top: 50px;
+    padding: 10px 20px;
+    margin-left: 150px;
+    background: #e08787;
+}
+.container .button .edu-form {
+    border: 1px solid #e08787;
+    padding: 15px;
+    display: none;
+}
+.container .job-div {
+    border: 1px solid #e08787;
+    padding: 15px;
+    display: none;
+}
+.container .button .social-form {
+    border: 1px solid #e08787;
+    padding: 15px;
+    display: none;
+}
+.container h1{
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.container p{
+    padding: 5px;
+}
+#collect-button {
+    margin-top: 50px;
+    padding: 10px 20px;
+    margin-left: 450px;
+    background: #e08787;
+}
