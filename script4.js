@@ -160,6 +160,7 @@ document.getElementById('form-etitle').addEventListener('focusout', function () 
             hideValues();
         }
 });
+
 function showValues(){
     ['form-etitle'].forEach(id =>{
         const valueElement = document.getElementById(`${id}Display`);
