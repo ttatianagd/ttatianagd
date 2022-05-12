@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/57647ec18f.js" crossorigin="anonymous"></script>
+        <title>
+            Formular de inregistrare
+        </title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">Registration</div>
+            <form id="idForm"  target="_self">
+                <div class="user-details">
+                    
+                    <div class="input-box">
+                        <label for="firstName" class="details">First Name</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Enter your first name" required>
+                        <div class="error" id="firstNameError"></div>
+                    </div>
+                    <div class="input-box">
+                        <label for="lastName" class="details">Last Name</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Enter your last name" required>
+                        <div class="error" id="lastNameError"></div>
+                    </div>
+                    <div class="input-box">
+                        <label for="email" class="details">Email</label>
+                        <input type="text" name="email" id="email" placeholder="Enter your email" required>
+                        <div class="error" id="emailError"></div>
+                    </div>
+                    <div class="input-box">
+                        <label for="phone" class="details">Phone Number</label>
+                        <input type="text" name="phone" id="phone" placeholder="Enter your number" required>
+                        <div class="error" id="phoneError"></div>
+                    </div>
+                    <div class="input-box">
+                        <label for="city" class="details">City</label>
+                        <input type="text" name="city" id="city" placeholder="Enter your city" required>
+                        <div class="error" id="cityError"></div>
+                    </div>
+                    <div class="input-box">
+                        <label for="profession" class="details">Profession</label>
+                        <input type="text" name="profession" id="profession" placeholder="Enter your profession" required>
+                        <div class="error" id="professionError"></div>
+                    </div>
+                    
+                </div>
+            
+                <div class="button">
+                    <input type="button" value="+" id="social_btn" />
+                    <label for="social_btn">Add Social links</label>
+                    <div class="social-form">
+                        <div class="input_fields_wrap">
+                            <button class="add_field_button">Add More Fields</button>
+                            <input type="text" name="social_links" id="input_field">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="button" value="+" id="education_btn"/>
+                    <label for="education_btn">Add Educations</label>
+                    <div class="edu-form">
+                        <div class="education">
+                        <div class="education-form">
+                            <span class="edu-title"></span>
+                            <input type="text" id="form-etitle" name="edutitle" placeholder="Education title" required>
+                            <div class="error" id="educError"></div>
+                        </div>
+                        <div class="education-form">
+                            <label class="edu-date">Graduation date</label>
+                            <input type="date" name="date"> 
+                        </div>
+                        </div>
+                        <select name="edutype" id="education-type">
+                        <option value="type">Education type</option>
+                        <option value="Bachelor">Bachelor</option>
+                        <option value="Superior">Superior</option>
+                        <option value="Lyceum">Lyceum</option>
+                        </select>
+                        <button class="add_education_button">Add Education</button>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="button" value="+" id="job_btn" />
+                    <label for="job_btn">Add Jobs</label>
+                </div>
+                <div class="job-div">
+                <div class="form">
+                    <select name="job_name" id="job_name" class="job">
+                        <option value="type">Job</option>
+                        <option value="Computer programmer">Computer programmer</option>
+                        <option value="Data scientist">Data scientist</option>
+                        <option value="Database administrator">Database administrator</option>
+                        <option value="Network engineer">Network engineer</option>
+                        <option value="Systems analyst">Systems analyst</option>
+                        <option value="Software engineer">Software engineer</option>
+                        <option value="Support specialist">Support specialist</option>
+                        <option value="Web developer">Web developer</option>
+                        </select>
+                    <div class="error" id="job_nError"></div>
+                </div>
+                <div class="job">
+                    <label>Start Date<br>
+                        <input type="date" name="start_date">
+                    </label>
+                    <br>
+                    <label>End Date<br>
+                        <input type="date" name="end_date" id="endDate">
+                    </label>
+                    <input type="checkbox" id="present" name="Present">
+                    <label for="in-present">In present</label>
+                </div>
+                <div class="job-details">
+                    <select name="city_job" class="job">
+                        <option value="type">City</option>
+                        <option value="Chișinău">Chișinău</option>
+                        <option value="Orhei">Orhei</option>
+                        <option value="Bălți">Bălți</option>
+                        <option value="București">București</option>
+                        <option value="Iași">Iași</option>
+                        <option value="Timișoara">Timișoara</option>
+                        <option value="Brașov">Brașov</option>
+                        <option value="Galați">Galați</option>
+                        <option value="Cluj-Napoca">Cluj-Napoca</option>
+                        </select>
+                        <select name="company_name" class="job">
+                            <option value="type">Company</option>
+                            <option value="AC Technologies">AC Technologies</option>
+                            <option value="Amdaris">Amdaris</option>
+                            <option value="BLUELINE">BLUELINE</option>
+                            <option value="Code Factory">Code Factory</option>
+                            <option value="DevelopmentAid">DevelopmentAid</option>
+                            <option value="Enterprise Business Solutions">Enterprise Business Solutions</option>
+                            <option value="Endava">Endava</option>
+                            <option value="Inther Software Development">Inther Software Development</option>
+                            <option value="Pentalog CHI">Pentalog CHI</option>
+                            </select>
+                            <button class="add_job_button">Add Job</button>
+                <div class="error" id="compError"></div>
+                </div>
+                </div>
+                <div class="save-button">
+                <input type="submit" value="Submit" id="submitButton">
+                </div>
+            </form>
+        </div>
+        <script src="script.js"></script> 
+    </body>
+    
+</html>
