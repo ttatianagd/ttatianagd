@@ -36,7 +36,6 @@ document.getElementById("submitButton").addEventListener("click", function () {
     }
 });
 
-
 function validateField(id, errorMessage) {
     const fieldInput = document.getElementById(id);
     const label = fieldInput.parentElement.children.item(0);

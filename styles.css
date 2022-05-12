@@ -57,14 +57,12 @@ form .user-details .input-box {
 .container .education .education-form {
     display: flex;
 }
-
 .container .education .education-form input {
     padding: 1px 50px;
 }
 .container .education .education-form{
     display: block;
 }
-
 .container .education .education-form .edu-date input{
     padding: 5px 50px;
 }

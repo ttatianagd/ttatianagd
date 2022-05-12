@@ -16,7 +16,6 @@
   const company_name=$("#company_name");
   const present=$("#present");
 
-
   function ajaxGetRequest(){
     $.ajax({
       url: 'http://localhost:3000/form-data',
